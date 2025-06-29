@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=National+Park:wght@200..800&family=Special+Gothic&display=swap"
+        rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/realestatelogo.jpg" type="image/x-icon">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <!-- navbar main -->
+        <div class="ads">
+            <h3>Available for new projects</h3>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/realestatelogo.jpg" alt="Logo ha g" width="100px">
+            </div>
+            <div class="list-menu" id="list-menu">
+                <ul>
+                    <li><a href="">Buy</a></li>
+                    <li><a href="">Homes</a></li>
+                    <li><a href="">Plots</a></li>
+                    <li><a href="">Property</a></li>
+                    <li><a href="">Commercial</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <div class="search">
+                    <input type="search" placeholder="Location">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <a href="" title="Login" id="logint">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <div id="mori"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="paper">
+            <div class="formc">
+                <div class="btn-box">
+                    <h4>Search Property for <span id="rb">Rent</span></h4>
+                    <button onclick="document.getElementById('rb').innerHTML = 'Rent'">Rent</button>
+                    <button onclick="document.getElementById('rb').innerHTML = 'Buy'">Buy</button>
+                </div>
+                <div class="form-fill">
+                    <form action="">
+                        <input list="city" placeholder="City" id="dcity">
+                        <datalist id="city">
+                            <option value="Gojra"></option>
+                            <option value="Moon"></option>
+                            <option value="Lahore"></option>
+                            <option value="Karachi"></option>
+                            <option value="Multan"></option>
+                            <option value="Islamabad"></option>
+                            <option value="Peshawar"></option>
+                        </datalist>
+                        <input type="text" placeholder="Address" id="address">
+                        <button type="button" id="find-btn">Find</button>
+                        <br>
+                        <input list="type" placeholder="Property type" id="dtype">
+                        <datalist id="type">
+                            <option value="Home"></option>
+                            <option value="Appartment"></option>
+                            <option value="Office"></option>
+                            <option value="Hospital"></option>
+                            <option value="Tent"></option>
+                            <option value="On-road"></option>
+                        </datalist>
+                        <input type="number" placeholder="Budget(pkr)" id="budget">
+                        <input type="Area" placeholder="Area(marla)" id="area">
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
